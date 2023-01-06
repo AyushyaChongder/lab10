@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+      * {
+    box-sizing: border-box;
+}
+
+
+/* Add padding to containers */
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(28, 28, 28);
+    position: relative;
+    font-family: 'Montserrat';
+}
+
+.container {
+    background-color: rgb(236, 234, 234);
+    width: 700px;
+    position: absolute;
+    left: 28%;
+    padding: 10px;
+    top: 10%;
+    border-radius: 3px;
+    ;
+}
+
+
+
+a {
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+table,th
+{
+    border: 1px solid;
+      width: 100%;
+      border-collapse: collapse;
+       padding: 20px;
+  text-align: left;
+    border-spacing: 30px;
+}
+
+td
+{
+       padding: 5px;
+       text-align: left;
+
+}
+
+
+h3
+{
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+ 
+
+<div class="container">
+  <div>
+    <h3>Users Details</h3>
+    <hr/>
+    <div>
+    
+      <div>
+      <table>
+  <thead>
+    <tr id="head">
+      
+      <th scope="col">User Name</th>
+      <th scope="col">Phone No</th>
+      <th scope="col">Email Id</th>
+       <th scope="col">Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#data}}
+    <tr>
+     
+      <td>{{username}}</td>
+      <td>{{phoneno}}</td>
+      <td>{{emailid}}</td>
+      <td>{{gender}}</td>
+    </tr>
+    {{/data}}
+   
+    
+  </tbody>
+</table>
+      </div>
+      <a href="./">BACK TO HOME PAGE</a> <br>
+    </div>
+  </div>
+    
+</div>
+</body>
+</html>

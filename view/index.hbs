@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+<style>
+  
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+
+body{
+  overflow-x: hidden;
+}
+
+.container  video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.28;
+  z-index: -9; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: #321a05d8;
+  mix-blend-mode: overlay;
+  z-index: -1;
+}
+
+.header {
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 180px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+nav {
+    flex: 1;
+    padding-left: 450px;
+    background-attachment: scroll;
+    background-color: transparent;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+  font-size: 20px;
+  padding-right: 5px;
+  transition: 0.2s ease-in-out;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+<div class="overlay"></div>
+<div class="header">
+        <nav>
+            <ul>
+                <li><a href="/add">Add Student</a></li>
+                <li><a href="/search">Search Student</a></li>
+                <li><a href="/delete">Delete Student</a></li>
+                 <li><a href="/view">View Student</a></li>
+
+                
+            </ul>
+        </nav>
+       
+    </div>
+
+
+
+</body>
+</html>
+
+
